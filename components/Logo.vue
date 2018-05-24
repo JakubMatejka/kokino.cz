@@ -5,7 +5,7 @@
 </template>
 
 <style>
-.logo {
+#header .logo {
   margin: 4em 0;
 }
 </style>

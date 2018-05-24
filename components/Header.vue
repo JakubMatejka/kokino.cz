@@ -1,9 +1,11 @@
 <template>
-  <b-container class="header">
-    <header-logo/>
-    <header-menu/>
+  <div>
+    <b-container id="header">
+      <header-logo/>
+      <header-menu/>
+    </b-container>
     <header-hero/>
-  </b-container>
+  </div>
 </template>
 
 <script>
@@ -21,7 +23,7 @@ export default {
 </script>
 
 <style>
-.header {
-  text-align: center;
-}
+  #header {
+    text-align: center;
+  }
 </style>
