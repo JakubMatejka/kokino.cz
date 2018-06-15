@@ -18,6 +18,11 @@ export default {
     HeaderLogo: Logo,
     HeaderMenu: Menu,
     HeaderHero: Hero
+  },
+  head: {
+    link: [
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans:300,700|Playfair+Display:700,700i&amp;subset=latin-ext' }
+    ]
   }
 }
 </script>

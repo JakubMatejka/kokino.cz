@@ -6,6 +6,6 @@
 
 <style>
 #header .logo {
-  margin: 4em 0;
+  margin: 3.2rem 0 2.4rem;
 }
 </style>
