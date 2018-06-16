@@ -1,6 +1,7 @@
 <template>
   <div>
-    <section class="container" id="o-nas">
+    <section class="container o-nas" id="o-nas">
+      <img src="/images/o-nas-sprite.png" class="o-nas-sprite" alt="" />
       <div class="row">
         <div class="col-4 offset-1">
           <h2>O nás</h2>
@@ -11,7 +12,7 @@
         </div>
       </div>
     </section>
-    <section class="container nase-nabidka">
+    <section class="container nase-nabidka" id="nase-nabidka">
       <nase-nabidka-obrazky/>
       <div class="row nase-nabidka-text">
         <div class="col-8 offset-1">
@@ -21,7 +22,7 @@
       </div>
       <stahnout-katalog/>
     </section>
-    <section class="container" id="kavarny">
+    <section class="container kavarny" id="kavarny">
       <kavarny-obrazky/>
       <div class="row">
         <div class="col-11 offset-1">
@@ -65,7 +66,7 @@
         </div>
       </div>
     </section>
-    <section class="container" id="historie">
+    <section class="container historie" id="historie">
       <div class="row justify-content-between">
         <div class="col historie-text">
           <img src="/images/ovocny-kosicek.jpg" alt="Ovocný košíček" title="Ovocný košíček" />
@@ -95,6 +96,7 @@
           <p>Naši výrobnu najdete na ulici:<br />
           Jelínkova 1, Brno-Žabovřesky, 616 00<br />
           Provozní dobu máme dle objednávek</p>
+          <a href="https://www.facebook.com/kokino.cz" class="btn-facebook"></a>
         </div>
       </div>
       <stahnout-katalog/>
@@ -102,8 +104,8 @@
     </section>
     <section class="container">
       <div class="row">
-        <div class="col">
-          Kokino
+        <div class="col text-center">
+          <img src="/images/logo-footer.png" alt="Kokino" title="Kokino" />
         </div>
       </div>
     </section>
@@ -128,11 +130,27 @@ export default {
 </script>
 
 <style>
+  body {
+    background: url('/images/bg-kavarny.png') no-repeat 4% 52%;
+  }
   section {
     margin: 0 0 2.5rem;
   }
+  .o-nas {
+    background: url('/images/bg-o-nas.png') no-repeat 6% 0;
+    position: relative;
+  }
+  .o-nas-sprite {
+    position: absolute;
+    top: 92%;
+    right: 0;
+    z-index: 3;
+  }
   .nase-nabidka-text {
     margin-bottom: 5rem;
+  }
+  .kavarny {
+    background: url('/images/bg-kavarny-2.png') no-repeat 95% 100%;
   }
   .kavarny-text {
     margin-bottom: 3.5rem;
@@ -143,6 +161,9 @@ export default {
   }
   .kavarny-brno .offset-1 {
     margin-left: 6%;
+  }
+  .historie {
+    background: url('/images/bg-historie.png') no-repeat 5% 60%;
   }
   .historie-text {
     padding-left: 1.7rem;
@@ -160,5 +181,16 @@ export default {
   }
   .kontakt-text {
     margin-bottom: 5rem;
+  }
+  .btn-facebook {
+    position: absolute;
+    top: -55%;
+    right: 12%;
+    width: 100px;
+    height: 151px;
+    background: url('/images/btn-facebook.png') no-repeat;
+  }
+  .btn-facebook:hover {
+    background: url('/images/btn-facebook-hover.png') no-repeat;
   }
 </style>
