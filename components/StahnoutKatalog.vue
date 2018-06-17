@@ -1,10 +1,10 @@
 <template>
     <div class="stahnout-katalog">
-        <div class="stahnout-katalog-button">
-            <button type="button" class="btn">Objednat si</button>
+        <div class="objednat-si-button">
+            <a href="mailto:kokino@kokino.cz" class="btn">Objednat si</a>
         </div>
-        <div class="">
-            <a href="">Stáhnout katalog</a>
+        <div class="stahnout-katalog-link">
+            <a href="/kokino-katalog.pdf">Stáhnout katalog</a>
         </div>
     </div>
 </template>
@@ -14,10 +14,10 @@
     margin-bottom: 6rem;
     text-align: center;
 }
-.stahnout-katalog-button {
+.objednat-si-button {
     margin-bottom: 1rem;
 }
-.stahnout-katalog button {
+.objednat-si-button a {
     text-transform: uppercase;
     color: #fff;
     font-size: 110%;
@@ -26,13 +26,13 @@
     background-color: #b77f39;
     padding: .8rem 3rem;
 }
-.stahnout-katalog button:hover {
+.objednat-si-button a:hover {
     background-color: #321814;
 }
-.stahnout-katalog a {
+.stahnout-katalog-link a {
     color: #321814;
 }
-.stahnout-katalog a:hover {
+.stahnout-katalog-link a:hover {
     color: #b77f39;
     text-decoration: none;
 }

@@ -27,7 +27,7 @@
       <div class="row">
         <div class="col-11 offset-1">
           <h2>Kavárny</h2>
-          <p class="kavarny-text">Naše hvězda kaváren a vůně naší výrobny - čokoládový dortík s mořskou solí. Ten, který spolu s našimi zákazníky nejednou odpustil hranice rodného Brna a rozjel se po Evropě. Jsme pyšní na to, že se všude stal sladkým středem pozornosti. Můžete jej, spolu s dalšími našimi čokoládovými dortíkíky, ochutnat každý den ve vybraných brněnských kavárnách. Již řadu let je vyrábíme podle našich osvědčených receptur a ze stále stejně kvalitních surovin.</p>
+          <p class="kavarny-text">Naše hvězda kaváren a vůně naší výrobny - čokoládový dortík s mořskou solí. Ten, který spolu s našimi zákazníky nejednou opustil hranice rodného Brna a rozjel se po Evropě. Jsme pyšní na to, že se všude stal sladkým středem pozornosti. Můžete jej, spolu s dalšími našimi čokoládovými dortíky, ochutnat každý den ve vybraných brněnských kavárnách. Již řadu let je vyrábíme podle našich osvědčených receptur a ze stále stejně kvalitních surovin.</p>
           <h3>Brno</h3>
           <div class="row no-gutters kavarny-brno">
             <div class="col-5">
@@ -89,7 +89,7 @@
         <div class="col-5 offset-1">
           <p>Kontaktní osobou je Michaela Lipenská<br />
           Tel.: +420 777 982 384<br />
-          E-mail: kokino@kokino.cz<br />
+          E-mail: <a href="mailto:kokino@kokino.cz">kokino@kokino.cz</a><br />
           IČ: 874 44 780</p>
         </div>
         <div class="col">
@@ -181,6 +181,9 @@ export default {
   }
   .kontakt-text {
     margin-bottom: 5rem;
+  }
+  .kontakt-text a {
+    color: #321814;
   }
   .btn-facebook {
     position: absolute;
