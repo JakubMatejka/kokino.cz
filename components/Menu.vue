@@ -1,12 +1,25 @@
 <template>
   <b-nav class="justify-content-center">
-    <b-nav-item href="#o-nas">O nás</b-nav-item>
-    <b-nav-item href="#nase-nabidka">Naše nabídka</b-nav-item>
-    <b-nav-item href="#kavarny">Kavárny</b-nav-item>
-    <b-nav-item href="#historie">Historie</b-nav-item>
-    <b-nav-item href="#kontakt">Kontakt</b-nav-item>
+    <b-nav-item v-on:click="menuLink" href="#o-nas">O nás</b-nav-item>
+    <b-nav-item v-on:click="menuLink" href="#nase-nabidka">Naše nabídka</b-nav-item>
+    <b-nav-item v-on:click="menuLink" href="#kavarny">Kavárny</b-nav-item>
+    <b-nav-item v-on:click="menuLink" href="#historie">Historie</b-nav-item>
+    <b-nav-item v-on:click="menuLink" href="#kontakt">Kontakt</b-nav-item>
   </b-nav>
 </template>
+
+<script>
+export default {
+  methods: {
+    menuLink: (event) => {
+      event.preventDefault();
+      document.querySelector(event.target.hash).scrollIntoView({ 
+        behavior: 'smooth' 
+      });
+    }
+  }
+}
+</script>
 
 <style>
 #header .nav {
