@@ -100,9 +100,9 @@
         </div>
       </div>
       <stahnout-katalog/>
-      <!--map/-->
+      <contact-map/>
     </section>
-    <section class="container">
+    <section class="container footer">
       <div class="row">
         <div class="col text-center">
           <img src="/images/logo-footer.png" alt="Kokino" title="Kokino" />
@@ -113,7 +113,7 @@
 </template>
 
 <script>
-//import Header from '~/components/Map.vue'
+import ContactMap from '~/components/ContactMap.vue'
 import NaseNabidkaObrazky from '~/components/NaseNabidkaObrazky.vue'
 import StahnoutKatalog from '~/components/StahnoutKatalog.vue'
 import KavarnyObrazky from '~/components/KavarnyObrazky.vue'
@@ -124,7 +124,8 @@ export default {
     NaseNabidkaObrazky,
     StahnoutKatalog,
     KavarnyObrazky,
-    HistorieObrazky
+    HistorieObrazky,
+    ContactMap
   }
 }
 </script>
@@ -195,5 +196,8 @@ export default {
   }
   .btn-facebook:hover {
     background: url('/images/btn-facebook-hover.png') no-repeat;
+  }
+  .footer {
+    margin: 3.5rem 0 4.5rem;
   }
 </style>
