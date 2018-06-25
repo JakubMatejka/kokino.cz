@@ -9,6 +9,6 @@
   margin: 0 0 6em;
 }
 #hero img {
-  object-fit: cover;
+  width: 100%;
 }
 </style>

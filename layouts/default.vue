@@ -23,9 +23,19 @@ body {
   color: #321814;
   font: 300 1.0em 'Open Sans', sans-serif;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1230px) {
   .container {
       max-width: 1230px;
+  }
+}
+@media (max-width: 1230px) {
+  body {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-size: 3rem;
+  }
+  .container {
+      max-width: 100%;
   }
 }
 h2 {

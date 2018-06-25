@@ -15,7 +15,9 @@
   "dependencies": {
     "@nuxtjs/dotenv": "^1.1.1",
     "bootstrap-vue": "^2.0.0-rc.11",
-    "nuxt": "^1.0.0"
+    "jquery": "^3.3.1",
+    "nuxt": "^1.0.0",
+    "vue-retina": "^0.1.11"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",

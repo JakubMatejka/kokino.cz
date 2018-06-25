@@ -36,5 +36,10 @@
     color: #b77f39;
     text-decoration: none;
 }
+@media (max-width: 1230px) {
+  .objednat-si-button a {
+    border-radius: 4rem;
+  }
+}
 </style>
 

@@ -13,9 +13,9 @@ export default {
   methods: {
     menuLink: (event) => {
       event.preventDefault();
-      document.querySelector(event.target.hash).scrollIntoView({ 
-        behavior: 'smooth' 
-      });
+      $('html, body').animate({
+        scrollTop: $(event.target.hash).offset().top
+      }, 500, () => location.hash = event.target.hash);
     }
   }
 }

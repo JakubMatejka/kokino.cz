@@ -21,5 +21,11 @@ export default {
     border: 0;
     margin: 0 1rem;
   }
+@media (max-width: 1230px) {
+  .contact-map {
+    margin: 0;
+    width: 100%;
+  }
+}
 </style>
         
