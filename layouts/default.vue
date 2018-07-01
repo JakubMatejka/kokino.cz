@@ -30,9 +30,8 @@ body {
 }
 @media (max-width: 1230px) {
   body {
-    padding-left: 3rem;
-    padding-right: 3rem;
-    font-size: 3rem;
+    font-size: 3.2rem;
+    line-height: 5.1rem;
   }
   .container {
       max-width: 100%;

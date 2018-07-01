@@ -37,8 +37,13 @@
     text-decoration: none;
 }
 @media (max-width: 1230px) {
+  .objednat-si-button {
+    margin-bottom: 2.5rem;
+}
   .objednat-si-button a {
     border-radius: 4rem;
+    font-size: 2.8rem;
+    padding: 2rem 9rem;
   }
 }
 </style>

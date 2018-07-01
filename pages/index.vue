@@ -12,9 +12,9 @@
         </div>
       </div>
     </section>
-    <section class="container nase-nabidka" id="nase-nabidka">
+    <section class="container nase-nabidka">
       <nase-nabidka-obrazky/>
-      <div class="row nase-nabidka-text">
+      <div class="row nase-nabidka-text" id="nase-nabidka">
         <div class="col-xl-8 offset-xl-1">
           <h2>Naše nabídka</h2>
           <p>Narozeninový dort? Čokoládový dezert? Nebo ochutnejte sněhový Mont Blanc, Kaštanové polínko, dort Černý les či kusové cukrovinky, které jsou perfektní pro každou oslavu, pěknou chvíli, festival či veselku. V běžné velikosti či mini. Stáhněte si katalog všech našich sladkostí! Bude obtížné si vybrat!</p>
@@ -22,9 +22,9 @@
       </div>
       <stahnout-katalog/>
     </section>
-    <section class="container kavarny" id="kavarny">
+    <section class="container kavarny">
       <kavarny-obrazky/>
-      <div class="row">
+      <div class="row kavarny-row" id="kavarny">
         <div class="col-xl-11 offset-xl-1">
           <h2>Kavárny</h2>
           <p class="kavarny-text">Naše hvězda kaváren a vůně naší výrobny - čokoládový dortík s mořskou solí. Ten, který spolu s našimi zákazníky nejednou opustil hranice rodného Brna a rozjel se po Evropě. Jsme pyšní na to, že se všude stal sladkým středem pozornosti. Můžete jej, spolu s dalšími našimi čokoládovými dortíky, ochutnat každý den ve vybraných brněnských kavárnách. Již řadu let je vyrábíme podle našich osvědčených receptur a ze stále stejně kvalitních surovin.</p>
@@ -56,7 +56,7 @@
           </div>
         </div>
       </div>
-      <div class="row">
+      <div class="row kavarny-row2">
         <div class="col offset-xl-1">
           <h3>Mimo Brno</h3>
           <ul class="list-unstyled">
@@ -66,11 +66,11 @@
         </div>
       </div>
     </section>
-    <section class="container historie" id="historie">
+    <section class="container historie">
       <div class="row justify-content-between">
         <div class="col-xl-6 historie-text">
           <img src="/images/ovocny-kosicek.jpg" alt="Ovocný košíček" title="Ovocný košíček" />
-          <h2>Historie</h2>
+          <h2 id="historie">Historie</h2>
           <p>Kokino se zrodilo roku 2010. Ve svých počátcích fungovalo jako příležitostné sladké občerstvení na různých oslavách. Hlavně v Kamenné kolonii v Brně. Zakladatelkami byly Romana Zubalová a Míša Lipenská. Dnes už Romča věnuje všechny své síly nejlepším makronkům ve střední Evropě (Cukrovinky Republika) a Kokino nadálé řídí Míša Lipenská.</p>
         </div>
         <div class="col-xl-6 historie-pravy-obrazek">
@@ -78,9 +78,9 @@
         </div>
       </div>
     </section>
-    <section class="container kontakt" id="kontakt">
+    <section class="container kontakt">
       <historie-obrazky/>
-      <div class="row">
+      <div class="row kontakt-header" id="kontakt">
         <div class="col-xl-11 offset-xl-1">
           <h2>Kontakt</h2>
         </div>
@@ -120,6 +120,11 @@ import KavarnyObrazky from '~/components/KavarnyObrazky.vue'
 import HistorieObrazky from '~/components/HistorieObrazky.vue'
 
 export default {
+  head: {
+    link: [
+      { rel: "preload", href: "/images/btn-facebook-hover.png", as: "image", type: "image/png" },
+    ],
+  },
   components: {
     NaseNabidkaObrazky,
     StahnoutKatalog,
@@ -132,13 +137,15 @@ export default {
 
 <style>
   body {
-    background: url('/images/bg-kavarny.png') no-repeat 4% 52%;
+    background: url('/images/bg-kavarny.png') no-repeat 3rem 45.5%;
   }
   section {
     margin: 0 0 2.5rem;
   }
+
   .o-nas {
-    background: url('/images/bg-o-nas.png') no-repeat 6% 0;
+    padding-top: 6rem;
+    background: url('/images/bg-o-nas.png') no-repeat 6% 6rem;
     position: relative;
   }
   .o-nas-sprite {
@@ -147,11 +154,17 @@ export default {
     right: 0;
     z-index: 3;
   }
+  
   .nase-nabidka-text {
+    padding-top: 5.5rem;
     margin-bottom: 5rem;
   }
+  
   .kavarny {
     background: url('/images/bg-kavarny-2.png') no-repeat 95% 100%;
+  }
+  .kavarny-row {
+    padding-top: 5.5rem;
   }
   .kavarny-text {
     margin-bottom: 3.5rem;
@@ -163,14 +176,15 @@ export default {
   .kavarny-brno .offset-1 {
     margin-left: 6%;
   }
+
   .historie {
     background: url('/images/bg-historie.png') no-repeat 5% 60%;
   }
   .historie-text {
     padding-left: 1.7rem;
   }
-  .historie-text img {
-    margin-bottom: 4rem;
+  .historie-text h2 {
+    padding-top: 4rem;
   }
   .historie-text h2,
   .historie-text p {
@@ -179,6 +193,10 @@ export default {
   }
   .historie-pravy-obrazek {
     padding-left: 15px;
+  }
+
+  .kontakt-header {
+     padding-top: 5.5rem;
   }
   .kontakt-text {
     margin-bottom: 5rem;
@@ -197,19 +215,59 @@ export default {
   .btn-facebook:hover {
     background: url('/images/btn-facebook-hover.png') no-repeat;
   }
+
   .footer {
     margin: 3.5rem 0 4.5rem;
   }
 
 @media (max-width: 1230px) {
+  body {
+    background-size: 30%;
+    background-position: 0rem 30.8%;
+  }
+
+  .o-nas,
+  .historie {
+      padding-left: 6rem; padding-right: 6rem;
+  }
+  .nase-nabidka-text,
+  .kavarny-obrazky,
+  .kavarny-row,
+  .kavarny-row2,
+  .historie-obrazky,
+  .kontakt-header,
+  .kontakt-text {
+    padding-left: 5rem; padding-right: 5rem;
+  }
+
+  .o-nas {
+    background-size: 30%;
+    background-position: 1rem 6rem;
+  }
+  .o-nas-sprite {
+    width: 20%;
+  }
   .o-nas-image {
     width: 100%;
   }
   .o-nas-text {
     margin-bottom: 3rem;
   }
+
+  .kavarny {
+    background-size: 30%;
+    background-position: 100% 43%;
+  }
   .kavarny-text {
     margin-right: 0;
+  }
+  .kavarny-row {
+    padding-top: 3rem;
+  }
+
+  .historie {
+    background-size: 30%;
+    background-position: 5% -60%;
   }
   .historie-text {
     padding-left: 0;
@@ -231,9 +289,16 @@ export default {
     margin-top: 3rem;
     width: 100%;
   }
+
   .kontakt {
     padding-left: 0;
     padding-right: 0;
+  }
+  .btn-facebook {
+    position: relative;
+    background-size: 200%;
+    width: 200px;
+    height: 300px;
   }
 }
 </style>

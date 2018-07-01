@@ -6,7 +6,7 @@
 
 <style>
 #hero {
-  margin: 0 0 6em;
+  margin: 0;
 }
 #hero img {
   width: 100%;

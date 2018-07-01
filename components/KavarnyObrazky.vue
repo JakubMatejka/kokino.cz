@@ -10,9 +10,6 @@
 </template>
 
 <style>
-.kavarny-obrazky {
-    margin-bottom: 5.5rem;
-}
 @media (max-width: 1230px) {
   .kavarny-obrazky img {
       width: 100%;

@@ -17,7 +17,7 @@
 
 <style>
 .historie-obrazky {
-    margin: 0 0 5.5rem;
+    margin: 0;
 }
 @media (max-width: 1230px) {
   .historie-obrazky {

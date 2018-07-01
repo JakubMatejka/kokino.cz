@@ -17,12 +17,11 @@
 
 <style>
 .nase-nabidka-obrazky {
-    margin: 0 0 5.5rem;
+    margin: 0;
 }
 @media (max-width: 1230px) {
   .nase-nabidka-obrazky {
-    margin-left: -15px;
-    margin-right: -15px;
+    padding-left: 4rem; padding-right: 4rem;
   }
   .nase-nabidka-obrazky img {
     width: 100%;
