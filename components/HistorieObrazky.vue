@@ -14,19 +14,3 @@
     </div>
     </div>
 </template>
-
-<style>
-.historie-obrazky {
-    margin: 0;
-}
-@media (max-width: 1230px) {
-  .historie-obrazky {
-    margin-left: -15px;
-    margin-right: -15px;
-  }
-  .historie-obrazky img {
-      width: 100%;
-      margin-bottom: 3rem;
-  }
-}
-</style>

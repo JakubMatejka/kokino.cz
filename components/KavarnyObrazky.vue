@@ -8,13 +8,3 @@
         </div>
     </div>
 </template>
-
-<style>
-@media (max-width: 1230px) {
-  .kavarny-obrazky img {
-      width: 100%;
-      margin-bottom: 3rem;
-  }
-}
-</style>
-

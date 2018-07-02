@@ -26,9 +26,3 @@ export default {
   }
 }
 </script>
-
-<style>
-  #header {
-    text-align: center;
-  }
-</style>

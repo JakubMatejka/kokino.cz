@@ -11,21 +11,3 @@ export default {
   }
 }
 </script>
-
-
-<style>
-  .contact-map {
-    filter: grayscale(90%);
-    width: 1170px; 
-    height: 524px;
-    border: 0;
-    margin: 0 1rem;
-  }
-@media (max-width: 1230px) {
-  .contact-map {
-    margin: 0;
-    width: 100%;
-  }
-}
-</style>
-        

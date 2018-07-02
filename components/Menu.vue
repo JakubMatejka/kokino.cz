@@ -1,11 +1,16 @@
 <template>
-  <b-nav class="justify-content-center">
-    <b-nav-item v-on:click="menuLink" href="#o-nas">O nás</b-nav-item>
-    <b-nav-item v-on:click="menuLink" href="#nase-nabidka">Naše nabídka</b-nav-item>
-    <b-nav-item v-on:click="menuLink" href="#kavarny">Kavárny</b-nav-item>
-    <b-nav-item v-on:click="menuLink" href="#historie">Historie</b-nav-item>
-    <b-nav-item v-on:click="menuLink" href="#kontakt">Kontakt</b-nav-item>
-  </b-nav>
+  <b-navbar toggleable="xl" class="navbar-dark">
+    <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
+    <b-collapse is-nav id="nav_collapse" justify-content-center>
+      <b-navbar-nav>
+        <b-nav-item v-on:click="menuLink" href="#o-nas">O nás</b-nav-item>
+        <b-nav-item v-on:click="menuLink" href="#nase-nabidka">Naše nabídka</b-nav-item>
+        <b-nav-item v-on:click="menuLink" href="#kavarny">Kavárny</b-nav-item>
+        <b-nav-item v-on:click="menuLink" href="#historie">Historie</b-nav-item>
+        <b-nav-item v-on:click="menuLink" href="#kontakt">Kontakt</b-nav-item>
+      </b-navbar-nav>
+    </b-collapse>
+  </b-navbar>
 </template>
 
 <script>
@@ -20,18 +25,3 @@ export default {
   }
 }
 </script>
-
-<style>
-#header .nav {
-  font-size: 90%;
-  margin: 0 auto 0.7rem;
-  text-transform: uppercase;
-}
-#header .nav a {
-  color: #321814;
-  margin: 0 0;
-}
-#header .nav a:hover {
-  text-shadow: 0 0 .1px #321814, 0 0 .1px #321814;
-}
-</style>
