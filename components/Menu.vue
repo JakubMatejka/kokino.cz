@@ -1,5 +1,5 @@
 <template>
-  <b-navbar toggleable="xl" class="navbar-dark">
+  <b-navbar toggleable="md" class="navbar-dark">
     <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
     <b-collapse is-nav id="nav_collapse" justify-content-center>
       <b-navbar-nav>

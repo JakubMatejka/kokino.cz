@@ -1,6 +1,6 @@
 <template>
     <div class="stahnout-katalog">
-        <div class="objednat-si-button">
+        <div class="objednat-si-button rounded-button">
             <a href="mailto:kokino@kokino.cz" class="btn">Objednat si</a>
         </div>
         <div class="stahnout-katalog-link">
