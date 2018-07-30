@@ -245,11 +245,13 @@
     }
 
     .navbar-toggler {
+      display: none;
       position: absolute;
       top: 1.75rem;
       right: 1rem;
     }
     #header .navbar-collapse {
+      display: none;
       margin: -8px -15px;
       background-color: #b77f39;
       text-align: left;

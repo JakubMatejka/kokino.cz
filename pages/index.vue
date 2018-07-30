@@ -88,13 +88,13 @@
       <div class="row kontakt-text">
         <div class="col-md-5 offset-md-1">
           <p>Kontaktní osobou je Michaela Lipenská<br />
-            Tel.: +420 777 982 384<br />
+            Tel.: +420&nbsp;777&nbsp;982&nbsp;384<br />
             E-mail: <a href="mailto:kokino@kokino.cz">kokino@kokino.cz</a><br />
-            IČ: 874 44 780</p>
+            IČ: 874&nbsp;44&nbsp;780</p>
         </div>
         <div class="col-md-6">
           <p>Naši výrobnu najdete na ulici:<br />
-            Jelínkova 1, Brno-Žabovřesky, 616 00<br />
+            Jelínkova&nbsp;1, Brno-Žabovřesky, 616&nbsp;00<br />
             Provozní dobu máme dle objednávek</p>
           <a href="https://www.facebook.com/kokino.cz" class="btn-facebook"><img src="/images/btn-facebook.png" alt="Facebook" title="Facebook"/></a>
         </div>
