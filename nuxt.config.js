@@ -21,6 +21,9 @@ module.exports = {
   modules: [
     'bootstrap-vue/nuxt',
     '@nuxtjs/dotenv',
+    ['@nuxtjs/google-analytics', {
+      id: 'UA-34824221-1'
+    }]
   ],
   /*
   ** Build configuration
