@@ -1,6 +1,6 @@
-const webpack = require('webpack');
+import webpack from 'webpack';
 
-module.exports = {
+export default {
   /*
   ** Headers of the page
   */
@@ -19,11 +19,11 @@ module.exports = {
   */
   loading: { color: '#3B8070' },
   modules: [
-    'bootstrap-vue/nuxt',
-    '@nuxtjs/dotenv',
     ['@nuxtjs/google-analytics', {
       id: 'UA-34824221-1'
-    }]
+    }],
+    'bootstrap-vue/nuxt',
+    '@nuxtjs/dotenv',
   ],
   /*
   ** Build configuration
