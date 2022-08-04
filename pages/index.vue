@@ -109,6 +109,7 @@
         </div>
       </div>
     </section>
+    <Popup v-show="showModal" @close-modal="showModal = false" />
   </div>
 </template>
 
@@ -118,6 +119,7 @@
   import StahnoutKatalog from '~/components/StahnoutKatalog.vue'
   import KavarnyObrazky from '~/components/KavarnyObrazky.vue'
   import HistorieObrazky from '~/components/HistorieObrazky.vue'
+  import Popup from '~/components/Popup.vue'
 
   export default {
     head: {
@@ -134,7 +136,13 @@
       StahnoutKatalog,
       KavarnyObrazky,
       HistorieObrazky,
-      ContactMap
+      ContactMap,
+      Popup
+    },
+    data() {
+      return {
+        showModal: true
+      }
     }
   }
 </script>
