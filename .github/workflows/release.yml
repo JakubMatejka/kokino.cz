@@ -1,0 +1,24 @@
+name: Release
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.x
+      - run: yarn install
+      - run: yarn run generate
+      - uses: shallwefootball/s3-upload-action@master
+        with:
+          aws_key_id: AKIAZ3LVYP3KDI4SUTID
+          aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY}}
+          aws_bucket: kokino
+          source_dir: 'dist'
+          destination_dir: ''
